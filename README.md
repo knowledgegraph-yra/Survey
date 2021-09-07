@@ -3,8 +3,7 @@
 # テンプレート案
 (https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1008032 より)
 
-## タイトル                                                                                                                                                                            
-タイトル
+# タイトル                                                                                                                                                                         
 ## 著者名
 著者名                                                                                                                                                                            
 ## DOI
