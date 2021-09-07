@@ -3,6 +3,16 @@
 # テンプレート案
 (https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1008032 より)
 
+## タイトル                                                                                                                                                                            
+タイトル
+## 著者名
+著者名                                                                                                                                                                            
+## DOI
+DOIをURLとして
+## 会議名(ジャーナル名)                                                                                                                                                         
+会議名またはジャーナル名を記述
+## トラック                                                                                                                                                              
+可能であれば論文の発表トラックを記述（会議の場合）
 ## 動機
 What do the author(s) want to know (motivation)?
 ## 手法
