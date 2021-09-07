@@ -1,6 +1,8 @@
 # Survey
 
 # テンプレート案
+(https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1008032 より)
+
 ## 動機
 What do the author(s) want to know (motivation)?
 ## 手法
