@@ -1,4 +1,4 @@
-## タイトル
+# タイトル
 Facilitating the Analysis of COVID-19 Literature Through a Knowledge Graph
 ## 著者名
 Bram Steenwinckel, Gilles Vandewiele, Ilja Rausch, Pieter Heyvaert, Ruben Taelman, Pieter Colpaert, Pieter Simoens, Anastasia Dimou, Filip De Turck, Femke Ongenae
