@@ -10,7 +10,7 @@ In-Use Track
 ## 動機
 電子部品を回路基板に実装する表面実装（SMT）における各工程の製造データを仮想統合し，製品の品質分析で利用可能にすること．
 ## 手法
-SMTのドメイン知識に関するオントロジーと装置データをR2RMLでマッピングしてVirtual Knowledge Graphを構築．製品の品質分析タスクをSPARQLクエリのカタログとしてエンコード．全体のフレームワークをOntop上で実装．
+SMTのドメイン知識に関するオントロジーと装置データをR2RMLでマッピングしてVirtual Knowledge Graphを構築．製品の品質分析タスクをSPARQLクエリのカタログとしてエンコード．全体のフレームワークを[Ontop](https://ontop-vkg.org)上で実装．
 ## 背景
 Why was it done that way (context within the field)?
 関連研究や新規性など。
