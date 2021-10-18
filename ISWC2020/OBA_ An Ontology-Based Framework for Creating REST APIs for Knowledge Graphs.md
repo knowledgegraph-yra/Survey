@@ -34,9 +34,9 @@ Why was it done that way (context within the field)?
 - OBAは以下を実現するが、そういうものは過去にはない。
     - KGの内容の概要を、Web開発者にとっても理解しやすい一般的な形式(OAS)で提供（[W3C Linked Platform](http://www.w3.org/TR/2015/REC-ldp-20150226/)とその実装([Apache Marmotta](http://marmotta.apache.org/), [TrellisLDP](https://www.trellisldp.org/about.html))、[Linked Data Templates](https://atomgraph.github.io/Linked-Data-Templates/)は、Web開発者に分かる形でKGの内容の概要を提供しない）
     - ポストされるリソースはOpenAPIスキーマでvalidateされる。APIは、自動でオントロジーから生成。全ての結果は、生成されるOASに応じて、JSONで返される。（Basil, [GRLC](https://doi.org/10.1007/978-3-319-47602-5_48), [r4r](https://github.com/oeg-upm/r4r), [RAMOSE](https://github.com/opencitations/ramose)は、KGへのアクセスを簡単にするために、SPARQLクエリからREST APIを作成するが、POSTされたデータのValidationが必要だし、手動でのクエリ定義が必要で、JSON形式への変換も必要）
-    - KG内のデータをクエリするために使用される、基礎となるオントロジーに精通している必要がない（[SPARQL transformer](https://doi.org/10.1007/978-3-030-30796-7_28), [SPARQL-JSONLD](https://github.com/usc-isi-i2/sparql-jsonld)、[14]は、Web開発者がKG内のデータをクエリするために使用される、基礎となるオントロジーに精通している必要がある）
+    - KG内のデータをクエリするために使用される、基礎となるオントロジーに精通している必要がない（[SPARQL transformer](https://doi.org/10.1007/978-3-030-30796-7_28), [SPARQL-JSONLD](https://github.com/usc-isi-i2/sparql-jsonld)、\[14\]は、Web開発者がKG内のデータをクエリするために使用される、基礎となるオントロジーに精通している必要がある）
     - OBAはAPIサーバを構築するための実装を提供（[owl2oas](https://github.com/hammar/owl2oas)はサーバ構築は未提供）
-    - オントロジーを、KGの「内容」をexploitするためにAPIを生成するためのtemplateとして、ontologyを使っている。（[4](https://doi.org/10.5220/0005987201500157) は、オントロジーの「クラス」や「プロパティ」へアクセスするREST APIを定義）
+    - オントロジーを、KGの「内容」をexploitするためにAPIを生成するためのtemplateとして、ontologyを使っている。（[\[4\]](https://doi.org/10.5220/0005987201500157) は、オントロジーの「クラス」や「プロパティ」へアクセスするREST APIを定義）
 
 ## 結果
 What do the results show (figures and data tables)?
