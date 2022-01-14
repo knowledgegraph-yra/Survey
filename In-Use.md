@@ -1,11 +1,9 @@
-# Survey
-
 # In-Use Track用テンプレート案
 (https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1008032 より)  
-(https://iswc2021.semanticweb.org/in-use-call)も参考
-# タイトル                                                                                                                                                                         
+(https://iswc2021.semanticweb.org/in-use-call) も参考
+# 論文タイトル                                                                                                                                                                         
 ## 著者名
-著者名                                                                                                                                                                            
+著者名(所属), 著者名(所属), ... 
 ## DOI
 DOIをURLとして
 ## 会議名(ジャーナル名)                                                                                                                                                         
@@ -21,7 +19,7 @@ DOIをURLとして
 関連研究、ユースケースの新規性や重要性など。
 ## 結果
 (4) What do the results show (figures and data tables)?
-## （技術の応用対象ドメインでの）利用実績
+## 利用実績
 (5) How did the author(s) interpret the results (interpretation/discussion)?  
 ## 学んだ教訓やベストプラクティス
 (5) How did the author(s) interpret the results (interpretation/discussion)?  

@@ -1,16 +1,14 @@
-# Survey
-
-# テンプレート案
-(https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1008032 より)
-
+# In-Use Track用テンプレート案
+(https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1008032 より)  
+(https://iswc2021.semanticweb.org/in-use-call) も参考
 # タイトル                                                                                                                                                                         
 ## 著者名
-著者名                                                                                                                                                                            
+著者名(所属), 著者名(所属), ... 
 ## DOI
 DOIをURLとして
-## 会議名(ジャーナル名)                                                                                                                                                         
+## 会議名(ジャーナル名) 
 会議名またはジャーナル名を記述
-## トラック                                                                                                                                                              
+## トラック 
 可能であれば論文の発表トラックを記述（会議の場合）
 ## (1) What do the author(s) want to know (motivation)?
 動機、社会的インパクトなど
