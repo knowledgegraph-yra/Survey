@@ -19,7 +19,7 @@ Resources Track
 ## リソースの活用実績
 (4) What do the results show (figures and data tables)?
 (5) How did the author(s) interpret the results (interpretation/discussion)?
-## 品質
+## 性能・品質評価
 (4) What do the results show (figures and data tables)?
 ## リソースの利用しやすさ
 (6) What should be done next? (Regarding this last question, the author(s) may provide some suggestions in the discussion, but the key is to ask yourself what you think should come next.)
