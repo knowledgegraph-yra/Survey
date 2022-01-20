@@ -1,5 +1,5 @@
 # In-Use Track用テンプレート案
-(https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1008032 より)  
+(https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1008032#sec004 より)  
 (https://iswc2021.semanticweb.org/in-use-call) も参考
 # 論文タイトル                                                                                                                                                                         
 ## 著者名
@@ -13,7 +13,6 @@ DOIをURLとして
 ## 動機
 研究の動機、社会的インパクトなど  
 > 対応項目：(1) What do the author(s) want to know (motivation)?
-> [https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1008032#sec004](参考)
 ## 手法
 提案手法、技術を応用する際に対象された課題の新規性や重要性など  
 > 対応項目：(2) What did they do (approach/methods)?
