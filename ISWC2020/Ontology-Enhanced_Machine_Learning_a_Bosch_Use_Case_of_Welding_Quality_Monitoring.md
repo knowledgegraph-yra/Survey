@@ -1,12 +1,8 @@
-# In-Use Track用テンプレート案
-(https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1008032 より)  
-(https://iswc2021.semanticweb.org/in-use-call) も参考
-# 論文タイトル                                                                                                                                                                         
+# Ontology-Enhanced Machine Learning: A Bosch Use Case of Welding Quality Monitoring
 ## 著者名
-著者名(所属), 著者名(所属), ... 
 Yulia Svetashova(Bosch Corporate Research/Karlsruhe Institute of Technology), Baifan Zhou(Bosch Corporate Research/Karlsruhe Institute of Technology), Tim Pychynski(Bosch Corporate Research), Stefan Schmidt(Bosch Corporate Research), York Sure-Vetter(Karlsruhe Institute of Technology), Ralf Mikut(Karlsruhe Institute of Technology), Evgeny Kharlamov(Bosch Center for Artificial Intelligence/University of Oslo)
 ## DOI
-(https://doi.org/10.1007/978-3-030-62466-8_33)[https://doi.org/10.1007/978-3-030-62466-8_33]
+[https://doi.org/10.1007/978-3-030-62466-8_33](https://doi.org/10.1007/978-3-030-62466-8_33)
 ## 会議名(ジャーナル名)                                                                                                                                                         
 The 19th International Semantic Web Conference (ISWC2020)
 ## トラック                                                                                                                                                              
@@ -26,6 +22,8 @@ In-Use
 ## 結果
 (4) What do the results show (figures and data tables)?
 ## 利用実績
-(5) How did the author(s) interpret the results (interpretation/discussion)?  
+Boschにおける溶接の品質モニタリングで評価
 ## 学んだ教訓やベストプラクティス
-(5) How did the author(s) interpret the results (interpretation/discussion)?  
+- オントロジーは異なる知識背景を持つ専門家同士のコミュニケーションの共通言語として効果的
+- テンプレートによりオントロジストでなくてもドメインやデータを機械可読かつ曖昧さのない形で記述できる
+- ドメインに馴染みのないユーザは、いくつかのタスクに多くの時間を要し、正確性が低下する
