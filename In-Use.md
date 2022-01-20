@@ -12,10 +12,10 @@ DOIをURLとして
 可能であれば論文の発表トラックを記述（会議の場合）
 ## 動機
 研究の動機、社会的インパクトなど  
-> 対応：(1) What do the author(s) want to know (motivation)?
+*対応：(1) What do the author(s) want to know (motivation)?*
 ## 手法
 提案手法、技術を応用する際に対象された課題の新規性や重要性など  
-> 対応：(2) What did they do (approach/methods)?
+対応：*(2) What did they do (approach/methods)?*
 ## 背景
 関連研究、ユースケースの新規性や重要性など  
 > 対応：(3) Why was it done that way (context within the field)?
