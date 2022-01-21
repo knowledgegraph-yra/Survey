@@ -1,6 +1,7 @@
 
 # Industry Track用テンプレート案
-(https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1008032 より)
+(https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1008032 より)  
+(https://iswc2021.semanticweb.org/industry-track-call も参考)
 
 # タイトル
 ## 一言でいうと
