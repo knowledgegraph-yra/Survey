@@ -1,21 +1,22 @@
 # In-Use Track用テンプレート案
 (https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1008032#sec004 より)  
 (https://iswc2021.semanticweb.org/in-use-call) も参考
-# 論文タイトル                                                                                                                                                                         
+# (論文タイトル)
 ## 一言でいうと
-論文内容を一言で要約
-
+論文内容を一言で要約  
 ## 著者/所属機関
-著者名, 著者名, ... 
+著者名, 著者名, ...
 - University1
 - University2
 - ...
+
 ## DOI
-DOIをURLとして
-## 会議名(ジャーナル名)                                                                                                                                                         
-会議名またはジャーナル名を記述
-## トラック                                                                                                                                                              
-可能であれば論文の発表トラックを記述（会議の場合）
+DOIがない場合は論文URL  
+## 会議名(ジャーナル名)  
+会議名またはジャーナル名を記述  
+## トラック
+In-Use Track
+
 ## 動機
 研究の動機、社会的インパクトなど  
 ## 手法

@@ -1,24 +1,19 @@
-
 # Industry Track用テンプレート案
 (https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1008032 より)  
 (https://iswc2021.semanticweb.org/industry-track-call も参考)
-
-# タイトル
+# (論文タイトル)
 ## 一言でいうと
-論文内容を一言で要約
-
-## DOI
-DOIがない場合は論文URL
-
+論文内容を一言で要約  
 ## 著者/所属機関
 著者名, 著者名, ...
-* University1
-* University2
-* ...
+- University1
+- University2
+- ...
 
-## 会議名
-会議名
-
+## DOI
+DOIがない場合は論文URL  
+## 会議名(ジャーナル名)  
+会議名またはジャーナル名を記述  
 ## トラック
 Industry Track
 
