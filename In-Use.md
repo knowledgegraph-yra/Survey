@@ -2,8 +2,14 @@
 (https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1008032#sec004 より)  
 (https://iswc2021.semanticweb.org/in-use-call) も参考
 # 論文タイトル                                                                                                                                                                         
-## 著者名
-著者名(所属), 著者名(所属), ... 
+## 一言でいうと
+論文内容を一言で要約
+
+## 著者/所属機関
+著者名, 著者名, ... 
+- University1
+- University2
+- ...
 ## DOI
 DOIをURLとして
 ## 会議名(ジャーナル名)                                                                                                                                                         
@@ -23,5 +29,4 @@ DOIをURLとして
 ## 学んだ教訓やベストプラクティス
 学んだ教訓やベストプラクティス、適応性など  
 ## 読んだ範囲
-例：Abstract, Section1, Section4, Figures, Tables
-
+アブストのみ，斜め読み程度，一通り精読
