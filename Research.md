@@ -31,4 +31,4 @@ How did the author(s) interpret the results (interpretation/discussion)?
 ## 課題
 What should be done next?
 ## 読んだ範囲
-アブストのみ，斜め読み程度，一通り精読
+（アブストのみ，斜め読み程度，一通り精読）から選択
