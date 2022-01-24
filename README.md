@@ -1,5 +1,5 @@
 # ナレッジグラフ若手の会：論文サーベイ
-論文サーベイ用テンプレートと，サーベイ結果の共有のためのリポジトリ
+論文サーベイ用テンプレートと，サーベイ結果の共有のためのリポジトリです。また，[ISWCサーベイ企画](https://www.sigswo.org/ISWC-Survey)での使用を検討しています。
 
 ## テンプレート案
 - Research Track用：[https://github.com/knowledgegraph-yra/Survey/blob/main/Research.md](https://github.com/knowledgegraph-yra/Survey/blob/main/Research.md)
@@ -8,7 +8,8 @@
 - Industry Track用：[https://github.com/knowledgegraph-yra/Survey/blob/main/Industry.md](https://github.com/knowledgegraph-yra/Survey/blob/main/Industry.md)
 
 ## サーベイ内容の登録方法
-- トラック別テンプレートを使用し，記載可能な項目を埋めてください。
+以下の要領でお願いいたします。
+- トラック別テンプレートを使用し，入力可能な項目を埋めてください。
 - タイトルを論文名として[Issues](https://github.com/knowledgegraph-yra/Survey/issues)から投稿をお願いいたします。
 - ラベルにトラック名と会議名を付与してください。
 
