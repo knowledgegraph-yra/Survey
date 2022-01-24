@@ -15,7 +15,7 @@
 - Industry Track：
 
 ## 参考にさせていただいた取り組み
-- [https://github.com/arXivTimes/arXivTimes](arXivTimes)
-- [http://xpaperchallenge.org/](xpaper.challenge)
-- [https://paperswithcode.com/](Papers with code)
-- [https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1008032](Ten simple rules for reading a scientific paper)
+- [arXivTimes](https://github.com/arXivTimes/arXivTimes)
+- [xpaper.challenge](http://xpaperchallenge.org/)
+- [Papers with code](https://paperswithcode.com/)
+- [Ten simple rules for reading a scientific paper](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1008032)
