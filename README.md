@@ -1,4 +1,4 @@
-# Survey
+# ナレッジグラフ若手の会：論文サーベイ
 論文サーベイ用テンプレートと，サーベイ結果の共有のためのリポジトリ
 
 ## テンプレート案
@@ -6,6 +6,11 @@
 - In-Use Track用；[https://github.com/knowledgegraph-yra/Survey/blob/main/In-Use.md](https://github.com/knowledgegraph-yra/Survey/blob/main/In-Use.md)
 - Resources Track用：[https://github.com/knowledgegraph-yra/Survey/blob/main/Resources.md](https://github.com/knowledgegraph-yra/Survey/blob/main/Resources.md)
 - Industry Track用：[https://github.com/knowledgegraph-yra/Survey/blob/main/Industry.md](https://github.com/knowledgegraph-yra/Survey/blob/main/Industry.md)
+
+## サーベイ内容の登録方法
+トラック別テンプレートを使用し，記載可能な項目を埋めてください。
+タイトルを論文名として[Issues](https://github.com/knowledgegraph-yra/Survey/issues)から投稿をお願いいたします。  
+ラベルにトラック名と会議名を付与してください。
 
 ## テンプレート使用例
 （準備中）  
