@@ -1,6 +1,12 @@
 # Ontology-Enhanced Machine Learning: A Bosch Use Case of Welding Quality Monitoring
+## 一言でいうと
+機械学習ワークフローをオントロジーで強化したSemMLを開発し、Boschにおける溶接品質モニタリングで採用して評価
 ## 著者名
-Yulia Svetashova(Bosch Corporate Research/Karlsruhe Institute of Technology), Baifan Zhou(Bosch Corporate Research/Karlsruhe Institute of Technology), Tim Pychynski(Bosch Corporate Research), Stefan Schmidt(Bosch Corporate Research), York Sure-Vetter(Karlsruhe Institute of Technology), Ralf Mikut(Karlsruhe Institute of Technology), Evgeny Kharlamov(Bosch Center for Artificial Intelligence/University of Oslo)
+Yulia Svetashova, Baifan Zhou, Tim Pychynski, Stefan Schmidt, York Sure-Vetter, Ralf Mikut, Evgeny Kharlamov
+- Bosh Corporate Research
+- Karlsruhe Institute of Technology
+- Bosh Center for Artificial Intelligence
+- University of Oslo
 ## DOI
 [https://doi.org/10.1007/978-3-030-62466-8_33](https://doi.org/10.1007/978-3-030-62466-8_33)
 ## 会議名(ジャーナル名)                                                                                                                                                         
@@ -29,4 +35,4 @@ Boschにおける溶接の品質モニタリングで評価
 - テンプレートによりオントロジストでなくてもドメインやデータを機械可読かつ曖昧さのない形で記述できる。この論文のユースケースでは、ユーザは一連のクラスを汎化する必要があるため、クラス依存に関する新しい要件に対応する必要があった。
 - ドメインに馴染みのないユーザは、いくつかのタスクに多くの時間を要し正確性が低下する。つまり、タスク交渉の反復プロセスをより小さな単位に分割することで、互いの情報をよりスムーズに消化できる。
 ## 読んだ範囲
-Abstract, Section1, Section3.3, Section5
+斜め読み程度
