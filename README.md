@@ -13,3 +13,9 @@
 - In-Use Track：
 - Resources Track：
 - Industry Track：
+
+## 参考にさせていただいた取り組み
+- [https://github.com/arXivTimes/arXivTimes](arXivTimes)
+- [http://xpaperchallenge.org/](xpaper.challenge)
+- [https://paperswithcode.com/](Papers with code)
+- [https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1008032](Ten simple rules for reading a scientific paper)
