@@ -3,9 +3,9 @@
 機械学習ワークフローをオントロジーで強化したSemMLを開発し、Boschにおける溶接品質モニタリングで採用して評価
 ## 著者名
 Yulia Svetashova, Baifan Zhou, Tim Pychynski, Stefan Schmidt, York Sure-Vetter, Ralf Mikut, Evgeny Kharlamov
-- Bosh Corporate Research
+- Bosch Corporate Research
 - Karlsruhe Institute of Technology
-- Bosh Center for Artificial Intelligence
+- Bosch Center for Artificial Intelligence
 - University of Oslo
 ## DOI
 [https://doi.org/10.1007/978-3-030-62466-8_33](https://doi.org/10.1007/978-3-030-62466-8_33)
