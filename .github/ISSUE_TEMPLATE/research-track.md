@@ -2,7 +2,7 @@
 name: Research Track
 about: Research Track用テンプレート
 title: "（論文タイトル）"
-labels: ''
+labels: Research
 assignees: ''
 
 ---

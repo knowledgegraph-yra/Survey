@@ -2,7 +2,7 @@
 name: Resource Track
 about: Resource Track用テンプレート
 title: "（論文タイトル）"
-labels: ''
+labels: Resource
 assignees: ''
 
 ---

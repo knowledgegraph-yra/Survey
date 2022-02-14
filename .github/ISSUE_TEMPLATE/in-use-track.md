@@ -2,7 +2,7 @@
 name: In-Use Track
 about: In-Use Track用テンプレート
 title: "（論文タイトル）"
-labels: ''
+labels: In-Use
 assignees: ''
 
 ---

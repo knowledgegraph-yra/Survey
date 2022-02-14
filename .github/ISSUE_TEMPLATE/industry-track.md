@@ -2,7 +2,7 @@
 name: Industry Track
 about: Industry Track用テンプレート
 title: "（論文タイトル）"
-labels: ''
+labels: Industry
 assignees: ''
 
 ---
