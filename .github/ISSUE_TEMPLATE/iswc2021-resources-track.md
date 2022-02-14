@@ -18,7 +18,7 @@ assignees: ''
 ## DOI
 DOIがない場合は論文URL  
 ## 会議名(ジャーナル名)  
-会議名またはジャーナル名を記述  
+The 20th International Semantic Web Conference (ISWC2021)
 ## トラック       
 Resources Track
 
