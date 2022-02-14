@@ -2,7 +2,7 @@
 name: ISWC2021 Resources Track
 about: ISWC2021 Resources Track用テンプレート
 title: "（論文タイトル）"
-labels: ISWC2021, Resource
+labels: ISWC2021
 assignees: ''
 
 ---
