@@ -17,7 +17,7 @@
 （準備中）  
 - Research Track：
 - In-Use Track：[Ontology-Enhanced Machine Learning: A Bosch Use Case of Welding Quality Monitoring](https://github.com/knowledgegraph-yra/Survey/issues/2)
-- Resources Track：
+- Resources Track：[OBA: An Ontology-Based Framework for Creating REST APIs for Knowledge Graphs](https://github.com/knowledgegraph-yra/Survey/issues/3)
 - Industry Track：[Semantic ML for Manufacturing Monitoring at Bosch](https://github.com/knowledgegraph-yra/Survey/issues/1)
 
 ## 参考にさせていただいた取り組み
