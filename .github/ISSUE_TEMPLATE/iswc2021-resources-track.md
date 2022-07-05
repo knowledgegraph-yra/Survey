@@ -23,7 +23,7 @@ The 20th International Semantic Web Conference (ISWC2021)
 Resources Track
 
 ## Resource Type
-※原稿に書かれているものを記載
+※原稿に書かれていればそれを記載。書かれていなければ空欄。
 ## 動機
 リソース作成の動機(motivation)
 ## リソースの設計方針

@@ -1,8 +1,8 @@
 ---
-name: Resources Track
-about: Resources Track用テンプレート
+name: ESWC2022 Resources Track
+about: ESWC2022 Resources Track用テンプレート
 title: "（論文タイトル）"
-labels: Resources
+labels: ESWC2022, Resources
 assignees: ''
 
 ---
@@ -18,7 +18,7 @@ assignees: ''
 ## DOI
 DOIがない場合は論文URL  
 ## 会議名(ジャーナル名)  
-会議名またはジャーナル名を記述  
+The 19th Extended Semantic Web Conference (ESWC2022)  
 ## トラック       
 Resources Track
 
