@@ -18,7 +18,7 @@ assignees: ''
 ## DOI
 DOIがない場合は論文URL  
 ## 会議名(ジャーナル名)  
-The 19th Extended Semantic Web Conference (ESWC2022)  
+19th European Semantic Web Conference ESWC 2022
 ## トラック
 In-Use Track
 
