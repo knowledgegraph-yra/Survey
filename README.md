@@ -1,5 +1,5 @@
 # ナレッジグラフ若手の会：論文サーベイ
-論文サーベイ用テンプレートと，サーベイ結果の共有のためのリポジトリです。また，[ISWCサーベイ企画](https://www.sigswo.org/ISWC-Survey)での使用を検討しています。
+論文サーベイ用テンプレートと，サーベイ結果の共有のためのリポジトリです。また，[ISWCサーベイ企画](https://www.sigswo.org/ISWC-Survey)や[ESWCサーベイ企画](https://kg-wakate.connpass.com/event/253702/)で使用しています。
 
 ## テンプレート案
 - Research Track用：[https://github.com/knowledgegraph-yra/Survey/blob/main/Research.md](https://github.com/knowledgegraph-yra/Survey/blob/main/Research.md)
@@ -14,8 +14,7 @@
 - issueのラベルはContributorsしか付与できないため，後ほどContributorがトラック名と会議名を付与します。
 
 ## テンプレート使用例
-（準備中）  
-- Research Track：
+- Research Track：[Graphhopper: Multi-hop Scene Graph Reasoning for Visual Question Answering](https://github.com/knowledgegraph-yra/Survey/issues/10)
 - In-Use Track：[Ontology-Enhanced Machine Learning: A Bosch Use Case of Welding Quality Monitoring](https://github.com/knowledgegraph-yra/Survey/issues/2)
 - Resources Track：[OBA: An Ontology-Based Framework for Creating REST APIs for Knowledge Graphs](https://github.com/knowledgegraph-yra/Survey/issues/3)
 - Industry Track：[Semantic ML for Manufacturing Monitoring at Bosch](https://github.com/knowledgegraph-yra/Survey/issues/1)
