@@ -19,6 +19,10 @@
 - Resources Track：[OBA: An Ontology-Based Framework for Creating REST APIs for Knowledge Graphs](https://github.com/knowledgegraph-yra/Survey/issues/3)
 - Industry Track：[Semantic ML for Manufacturing Monitoring at Bosch](https://github.com/knowledgegraph-yra/Survey/issues/1)
 
+## サーベイ会発表資料
+サーベイ内容を1論文1スライド1分でまとめていただいて発表するサーベイ会を開催しています。  
+[発表資料（PDF）](https://github.com/knowledgegraph-yra/Survey/tree/main/pdf)
+
 ## 参考にさせていただいた取り組み
 - [arXivTimes](https://github.com/arXivTimes/arXivTimes)
 - [xpaper.challenge](http://xpaperchallenge.org/)
