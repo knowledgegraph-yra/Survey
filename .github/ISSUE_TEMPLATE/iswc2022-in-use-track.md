@@ -1,8 +1,8 @@
 ---
-name: ISWC2021 In-Use Track
-about: ISWC2021 In-Use Track用テンプレート
+name: ISWC2022 In-Use Track
+about: ISWC2022 In-Use Track用テンプレート
 title: "（論文タイトル）"
-labels: In-Use, ISWC2021
+labels: In-Use, ISWC2022
 assignees: ''
 
 ---
@@ -18,7 +18,7 @@ assignees: ''
 ## DOI
 DOIがない場合は論文URL  
 ## 会議名(ジャーナル名)  
-The 20th International Semantic Web Conference (ISWC2021)
+The 21st International Semantic Web Conference (ISWC2022)
 ## トラック
 In-Use Track
 
