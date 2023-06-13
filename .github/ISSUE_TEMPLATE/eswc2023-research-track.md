@@ -1,8 +1,8 @@
 ---
-name: ESWC2022 Research Track
-about: ESWC2022 Research Track用テンプレート
+name: ESWC2023 Research Track
+about: ESWC2023 Research Track用テンプレート
 title: "（論文タイトル）"
-labels: ESWC2022, Research
+labels: ESWC2023, Research
 assignees: ''
 
 ---
@@ -18,7 +18,7 @@ assignees: ''
 ## DOI
 DOIがない場合は論文URL  
 ## 会議名(ジャーナル名)  
-19th European Semantic Web Conference ESWC 2022
+20th Extended Semantic Web Conference ESWC 2023
 ## トラック
 Research Track
 

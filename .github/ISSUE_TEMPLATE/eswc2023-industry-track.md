@@ -1,8 +1,8 @@
 ---
-name: ESWC2022 Industry Track
-about: ESWC2022 Industry Track用テンプレート
+name: ESWC2023 Industry Track
+about: ESWC2023 Industry Track用テンプレート
 title: "（論文タイトル）"
-labels: ESWC2022, Industry
+labels: ESWC2023, Industry
 assignees: ''
 
 ---
@@ -18,7 +18,7 @@ assignees: ''
 ## DOI
 DOIがない場合は論文URL  
 ## 会議名(ジャーナル名)  
-19th European Semantic Web Conference ESWC 2022
+20th Extended Semantic Web Conference ESWC 2023
 ## トラック
 Industry Track
 
