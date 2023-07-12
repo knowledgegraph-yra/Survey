@@ -37,3 +37,5 @@ How did the author(s) interpret the results (interpretation/discussion)?
 What should be done next?
 ## 読んだ範囲
 （アブストのみ，斜め読み程度，一通り精読）から選択
+## サーベイにおけるChatGPT/LLMの利用範囲
+（利用なし，参考にした程度，積極的に利用）から選択
