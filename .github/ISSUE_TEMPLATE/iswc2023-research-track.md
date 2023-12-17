@@ -1,5 +1,5 @@
 ---
-name: ISWC2022 Research Track
+name: ISWC2023 Research Track
 about: ISWC2023 Research Track用テンプレート
 title: "（論文タイトル）"
 labels: ISWC2023, Research
@@ -18,7 +18,7 @@ assignees: ''
 ## DOI
 DOIがない場合は論文URL  
 ## 会議名(ジャーナル名)  
-The 22nd International Semantic Web Conference (ISWC2022)
+The 22nd International Semantic Web Conference (ISWC2023)
 ## トラック
 Research Track
 
