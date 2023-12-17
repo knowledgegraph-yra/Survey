@@ -2,7 +2,7 @@
 name: ESWC2023 In-Use Track
 about: ESWC2023 In-Use Track用テンプレート
 title: "（論文タイトル）"
-labels: ESWC2023, In-Use
+labels: ESWC2023, In-Use, Resources
 assignees: ''
 
 ---
