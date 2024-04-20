@@ -7,8 +7,7 @@ REPO = os.environ["GITHUB_REPOSITORY"]
 OUTPUT_PATH = os.environ["OUTPUT_PATH"]
 LABEL = os.environ["ISSUE_LABEL"]
 
-MARP_PREFIX = """
----
+MARP_PREFIX = """---
 marp: true
 size: 4:3
 paginate: true
@@ -68,7 +67,7 @@ def main():
         f.write(MARP_PREFIX)
         for md in markdown_contents:
             f.write(md)
-            f.write("---")
+            f.write("\n---\n")
 
 
 if __name__ == "__main__":
