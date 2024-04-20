@@ -64,7 +64,7 @@ def main():
         if md is not None:
             markdown_contents.append(md)
     # Geerate the final output file
-    with open(WORKSPACE + f"slides/{LABEL}.md", "w") as f:
+    with open(OUTPUT_PATH, "w") as f:
         f.write(MARP_PREFIX)
         for md in markdown_contents:
             f.write(md)
