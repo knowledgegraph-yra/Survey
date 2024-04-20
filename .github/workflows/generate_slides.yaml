@@ -28,7 +28,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_REPOSITORY: ${{ github.repository }}
-          OUTPUT_PATH: ${{ env.MARKDOWN_OUTPUT_PATH }}
+          OUTPUT_PATH: ${{ env.CONFERENCE_LABEL }}.md
           ISSUE_LABEL: ${{ env.CONFERENCE_LABEL }}
         run: python slide_generation/fetch_issues.py
 
