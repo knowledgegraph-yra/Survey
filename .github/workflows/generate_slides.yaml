@@ -35,25 +35,31 @@ jobs:
       - name: Upload issues file
         uses: actions/upload-artifact@v4
         with:
-          name: out.md
-          path: ${{ format('slides/{0}.md', env.CONFERENCE_LABEL) }}
+          name: ${{ env.CONFERENCE_LABEL }}.md
+          path: ${{ env.CONFERENCE_LABEL }}.md
+          # path: ${{ format('slides/{0}.md', env.CONFERENCE_LABEL) }}
 
   marp-to-pdf:
     runs-on: ubuntu-latest
     needs: fetch_issues
     steps:
       - uses: actions/checkout@v4
-      - run: >
-          docker run --rm -u root --init
-            -v "$(pwd):/home/marp/app/"
-            -e LANG="ja_JP.UTF-8"
-            -e MARP_USER="$(id -u):$(id -g)"
-            marpteam/marp-cli
-            ${{ format('slides/{0}.md', env.CONFERENCE_LABEL) }}
-            --pdf
-            --output output.pdf
+      - uses: actions/download-artifact@v4
+        with:
+          # Destination path. Supports basic tilde expansion.
+          # Optional. Default is $GITHUB_WORKSPACE
+          path: ${{ env.CONFERENCE_LABEL }}.md
+      - run: |
+          docker run --rm -u root --init \
+            -v "$(pwd):/home/marp/app/" \
+            -e LANG="ja_JP.UTF-8" \
+            -e MARP_USER="$(id -u):$(id -g)" \
+            marpteam/marp-cli \
+            ${{ env.CONFERENCE_LABEL }}.md \
+            --pdf \
+            --output ${{ env.CONFERENCE_LABEL }}.pdf
       - name: Upload PDF
         uses: actions/upload-artifact@v4
         with:
-          name: output.pdf
-          path: ${{ format('slides/{0}.pdf', env.CONFERENCE_LABEL) }}
+          name: ${{ env.CONFERENCE_LABEL }}.pdf
+          path: ${{ env.CONFERENCE_LABEL }}.pdf
