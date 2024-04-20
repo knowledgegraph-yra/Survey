@@ -47,7 +47,7 @@ jobs:
       - run: |
           docker run --rm -u root --init \
             -v "$(pwd):/home/marp/app/" \
-            -e LANG="ja_JP.UTF-8"
+            -e LANG="ja_JP.UTF-8" \
             -e MARP_USER="$(id -u):$(id -g)" \
             marpteam/marp-cli \
             ${{ format('slides/{0}.md', env.CONFERENCE_LABEL) }} \
