@@ -4,7 +4,6 @@ on:
   workflow_dispatch:
 env:
   CONFERENCE_LABEL: "ISWC2023"
-  SLIDES_PATH: ${{ format('slides/{0}.md', env.MARKDOWN_OUTPUT_PATH) }}
 
 jobs:
   fetch_issues:
@@ -37,7 +36,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: out.md
-          path: ${{ env.SLIDES_PATH }}
+          path: ${{ format('slides/{0}.md', env.CONFERENCE_LABEL) }}
 
   marp-to-pdf:
     runs-on: ubuntu-latest
@@ -47,7 +46,7 @@ jobs:
       - run: |
           directory=$(cat config.json | jq -r .directory)
           output_format=$(cat config.json | jq -r .output_format)
-          echo "DIR=${SLIDES_PATH}" >> $GITHUB_OUTPUT
+          echo "DIR=slides/${CONFERENCE_LABEL}" >> $GITHUB_OUTPUT
           echo "FORMAT=${output_format}" >> $GITHUB_OUTPUT
         id: config
       - run: |
