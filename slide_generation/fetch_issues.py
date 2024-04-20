@@ -4,8 +4,8 @@ import json
 
 TOKEN = os.environ["GITHUB_TOKEN"]
 REPO = os.environ["GITHUB_REPOSITORY"]
+OUTPUT_PATH = os.environ["OUTPUT_PATH"]
 LABEL = os.environ["ISSUE_LABEL"]
-OUTPUT_PATH = os.environ["MARP_MARKDOWN_OUTPUT_PATH"]
 
 MARP_PREFIX = """
 ---
@@ -64,7 +64,7 @@ def main():
         if md is not None:
             markdown_contents.append(md)
     # Geerate the final output file
-    with open(OUTPUT_PATH, "w") as f:
+    with open(WORKSPACE + f"slides/{LABEL}.md", "w") as f:
         f.write(MARP_PREFIX)
         for md in markdown_contents:
             f.write(md)
