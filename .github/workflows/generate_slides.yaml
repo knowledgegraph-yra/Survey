@@ -43,15 +43,14 @@ jobs:
     needs: fetch_issues
     steps:
       - uses: actions/checkout@v4
-      - run: sudo apt-get update && sudo apt-get install jq
-      - run: |
-          docker run --rm -u root --init \
-            -v "$(pwd):/home/marp/app/" \
-            -e LANG="ja_JP.UTF-8" \
-            -e MARP_USER="$(id -u):$(id -g)" \
-            marpteam/marp-cli \
-            ${{ format('slides/{0}.md', env.CONFERENCE_LABEL) }} \
-            --pdf \
+      - run: >
+          docker run --rm -u root --init
+            -v "$(pwd):/home/marp/app/"
+            -e LANG="ja_JP.UTF-8"
+            -e MARP_USER="$(id -u):$(id -g)"
+            marpteam/marp-cli
+            ${{ format('slides/{0}.md', env.CONFERENCE_LABEL) }}
+            --pdf
             --output output.pdf
       - name: Upload PDF
         uses: actions/upload-artifact@v4
