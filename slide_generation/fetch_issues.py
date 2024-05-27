@@ -68,7 +68,7 @@ def convert_issue_to_markdown(issue: dict) -> str | None:
     sections: list[tuple[str, str]] = []  # (header, body)
     for line in issue["body"].splitlines():
         line = line.strip()
-        if line.statewith("#"):
+        if line.startswith("#"):
             sections.append((line, ''))
         else:
             if len(sections) > 0:
