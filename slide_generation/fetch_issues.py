@@ -1,3 +1,4 @@
+import dataclasses
 import requests
 import re
 import os
@@ -45,6 +46,13 @@ MD_IMAGE_PATTERN = r'!\[(?P<description>.+)\]\((?P<url>.+)\)'
 MD_HEADER_PATTERN = r'(?P<level>#+) (?P<text>.+)'
 
 
+@dataclasses
+class MarkdownSection:
+    header: str
+    body: str
+    
+
+
 def fetch_issues() -> list[dict]:
     # I don't implement pagenation here
     # Implement pagenation if you have more than 100 issues per label
@@ -65,30 +73,30 @@ def convert_issue_to_markdown(issue: dict) -> str | None:
     if "body" not in issue:
         return None
     # extract authors
-    sections: list[tuple[str, str]] = []  # (header, body)
+    sections: list[MarkdownSection] = []
     for line in issue["body"].splitlines():
         line = line.strip()
         if line.startswith("#"):
-            sections.append((line, ''))
+            sections.append(MarkdownSection(header=line, body=""))
         else:
             if len(sections) > 0:
-                sections[-1][1] += line
+                sections[-1].body += ("\n" + line)
 
     authors: str | None = None
     doi: str | None = None
     track_name: str | None = None
 
-    sections_wo_metadata: list[tuple[str, str]] = []
-    for header, body in sections:
-        if ('著者' in header) and (authors is None):
+    sections_wo_metadata: list[MarkdownSection] = []
+    for section in sections:
+        if ('著者' in section.header) and (authors is None):
             authors = body
-        elif ('doi' in header.lower()) and (doi is None):
+        elif ('doi' in section.header.lower()) and (doi is None):
             doi = body
-        elif (('トラック' in header) or ('track' in header.lower())) and (track_name is None):
+        elif (('トラック' in section.header) or ('track' in section.header.lower())) and (track_name is None):
             track_name = body
         else:
-            sections_wo_metadata.append((header, body))
-    body = "\n\n".join([f"{header}\n{body}" for header, body in sections_wo_metadata])
+            sections_wo_metadata.append(section)
+    body = "\n\n".join([f"{section.header}\n{section.body}" for section in sections_wo_metadata])
     return MARKDOWN_TEMPLATE.format(
         title=issue["title"],
         authors=(authors or ""),
