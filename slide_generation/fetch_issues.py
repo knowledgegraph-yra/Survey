@@ -118,7 +118,8 @@ def main():
         # detect images
         image_mds: list[str] = []
         for image_match_obj in re.finditer(MD_IMAGE_PATTERN, md):
-            image_mds.append(image_match_obj.group(0))
+            # You need to insert a title, or a new page won't be generatedv
+            image_mds.append(f"{issue['title']}\n\n{image_match_obj.group(0)}")
         # remove images from the original page
         md = re.sub(MD_IMAGE_PATTERN, "", md)
 
