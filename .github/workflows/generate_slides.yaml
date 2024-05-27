@@ -57,6 +57,7 @@ jobs:
             marpteam/marp-cli \
             ${{ env.CONFERENCE_LABEL }}.md \
             --pdf \
+            --html \
             --output ${{ env.CONFERENCE_LABEL }}.pdf
       - name: Upload PDF
         uses: actions/upload-artifact@v4

@@ -36,6 +36,7 @@ style: |
 
 MARKDOWN_TEMPLATE = """
 # {title}
+
 <div class="authors"> {authors} </div>
 <div class="track-name"> {track_name} </div>
 
