@@ -1,4 +1,4 @@
-import dataclasses
+from dataclasses import dataclass
 import requests
 import re
 import os
@@ -46,7 +46,7 @@ MD_IMAGE_PATTERN = r'!\[(?P<description>.+)\]\((?P<url>.+)\)'
 MD_HEADER_PATTERN = r'(?P<level>#+) (?P<text>.+)'
 
 
-@dataclasses
+@dataclass
 class MarkdownSection:
     header: str
     body: str
