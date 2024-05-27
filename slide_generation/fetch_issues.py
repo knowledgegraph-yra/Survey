@@ -89,11 +89,11 @@ def convert_issue_to_markdown(issue: dict) -> str | None:
     sections_wo_metadata: list[MarkdownSection] = []
     for section in sections:
         if ('著者' in section.header) and (authors is None):
-            authors = body
+            authors = section.body
         elif ('doi' in section.header.lower()) and (doi is None):
-            doi = body
+            doi = section.body
         elif (('トラック' in section.header) or ('track' in section.header.lower())) and (track_name is None):
-            track_name = body
+            track_name = section.body
         else:
             sections_wo_metadata.append(section)
     body = "\n\n".join([f"{section.header}\n{section.body}" for section in sections_wo_metadata])
