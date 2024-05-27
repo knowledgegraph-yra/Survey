@@ -39,7 +39,9 @@ MD_IMAGE_PATTERN = r'!\[(?P<description>.+)\]\((?P<url>.+)\)'
 
 
 def fetch_issues() -> list[dict]:
-    url = f"https://api.github.com/repos/{REPO}/issues?state=open&labels={LABEL}"
+    # I don't implement pagenation here
+    # Implement pagenation if you have more than 100 issues per label
+    url = f"https://api.github.com/repos/{REPO}/issues?state=open&labels={LABEL}&per_page=100"
     headers = {
         "Authorization": f"token {TOKEN}",
         "Accept": "application/vnd.github.v3+json",
