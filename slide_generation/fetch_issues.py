@@ -17,10 +17,12 @@ style: |
   section {
     font-size: 12px; /* Adjust font size to fit content */
     margin: 0;
-    padding: 20px 40px;
+    padding: 20px 20px;
   }
   h2 {
     margin: 0;
+    margin-top: 10px;
+    margin-bottom: 5px;
     padding: 0;
   }
   p {
@@ -89,12 +91,20 @@ def convert_issue_to_markdown(issue: dict) -> str | None:
 
     sections_wo_metadata: list[MarkdownSection] = []
     for section in sections:
+        if body == "":
+            continue
         if ('著者' in section.header) and (authors is None):
             authors = section.body
         elif ('doi' in section.header.lower()) and (doi is None):
             doi = section.body
         elif (('トラック' in section.header) or ('track' in section.header.lower())) and (track_name is None):
             track_name = section.body
+        elif "会議名" in section.header:
+            # jsut ignore
+            pass
+        elif '読んだ範囲' in section.header:
+            # just ignore
+            pass
         else:
             sections_wo_metadata.append(section)
     body = "\n\n".join([f"{section.header}\n{section.body}" for section in sections_wo_metadata])
@@ -123,7 +133,6 @@ def main():
             image_mds.append(f"{issue['title']}\n\n{image_match_obj.group(0)}")
         # remove images from the original page
         md = re.sub(MD_IMAGE_PATTERN, "", md)
-
         markdown_contents.append(md)
         markdown_contents.extend(image_mds)
     # Geerate the final output file
