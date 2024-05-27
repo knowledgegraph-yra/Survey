@@ -60,17 +60,22 @@ def convert_issue_to_markdown(issue: dict) -> str | None:
 
 def main():
     issues = fetch_issues()
+    print(f"Found {len(issues)} issues")
     markdown_contents: list[str] = []
     for issue in issues:
         md = convert_issue_to_markdown(issue)
+        if md is None:
+            issue_id = issue['id']
+            print(f"Failed to convert issue to markdown. Issue ID: {issue_id}")
+            continue
         # detect images
         image_mds: list[str] = []
         for image_match_obj in re.finditer(MD_IMAGE_PATTERN, md):
             image_mds.append(image_match_obj.group(0))
         # remove images from the original page
         md = re.sub(MD_IMAGE_PATTERN, "", md)
-        if md is not None:
-            markdown_contents.append(md)
+
+        markdown_contents.append(md)
         markdown_contents.extend(image_mds)
     # Geerate the final output file
     with open(OUTPUT_PATH, "w") as f:
