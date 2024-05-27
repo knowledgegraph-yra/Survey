@@ -26,16 +26,23 @@ style: |
     margin: 0;
     padding: 0;
   }
+  .authors, .track-name {
+    font-size: 8px;
+    color: #666;
+  }
 ---
 """
 
 MARKDOWN_TEMPLATE = """
 # {title}
+<div class="authors"> {authors} </div>
+<div class="track-name"> {track_name} </div>
 
 {body}
 """
 
 MD_IMAGE_PATTERN = r'!\[(?P<description>.+)\]\((?P<url>.+)\)'
+MD_HEADER_PATTERN = r'(?P<level>#+) (?P<text>.+)'
 
 
 def fetch_issues() -> list[dict]:
@@ -57,7 +64,37 @@ def convert_issue_to_markdown(issue: dict) -> str | None:
         return None
     if "body" not in issue:
         return None
-    return MARKDOWN_TEMPLATE.format(title=issue["title"], body=issue["body"])
+    # extract authors
+    sections: list[tuple[str, str]] = []  # (header, body)
+    for line in issue["body"].splitlines():
+        line = line.strip()
+        if line.statewith("#"):
+            sections.append((line, ''))
+        else:
+            if len(sections) > 0:
+                sections[-1][1] += line
+
+    authors: str | None = None
+    doi: str | None = None
+    track_name: str | None = None
+
+    sections_wo_metadata: list[tuple[str, str]] = []
+    for header, body in sections:
+        if ('著者' in header) and (authors is None):
+            authors = body
+        elif ('doi' in header.lower()) and (doi is None):
+            doi = body
+        elif (('トラック' in header) or ('track' in header.lower())) and (track_name is None):
+            track_name = body
+        else:
+            sections_wo_metadata.append((header, body))
+    body = "\n\n".join([f"{header}\n{body}" for header, body in sections_wo_metadata])
+    return MARKDOWN_TEMPLATE.format(
+        title=issue["title"],
+        authors=(authors or ""),
+        track_name=(track_name or ""),
+        body=body,
+    )
 
 
 def main():
