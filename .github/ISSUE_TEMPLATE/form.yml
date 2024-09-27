@@ -1,46 +1,31 @@
 name: "form_test"
-title: "surveyed paper registration form"
+title: "論文タイトル"
 description: "test form"
 body:
-- type: textarea
-  id: repro
-  attributes:
-    label: Reproduction steps
-    description: "How do you trigger this bug? Please walk us through it step by step."
-    value: |
-      1.
-      2.
-      3.
-      ...
-    render: bash
-  validations:
-    required: true
 - type: input
   id: hitokoto
   attributes:
-    label: One line description
-    description: "論文内容を一言で要約"
+    label: "論文内容を一言で要約"
   validations:
     required: true
 - type: input
   id: author
   attributes:
-    label: One line description
-    description: "著者名"
+    label: "著者名"
+    description: "氏名（所属機関番号）の形式でカンマで区切って記入してください"
   validations:
     required: true
 - type: input
   id: conference
   attributes:
-    label: Title of the conference or the journal
-    description: "会議名/ジャーナル名"
+    label: "会議名/ジャーナル名"
   validations:
     required: true
 - type: textarea
   id: affiliation
   attributes:
-    label: Affiliation
-    description: "所属機関を箇条書きで"
+    label: "著者の所属機関"
+    description: "箇条書きで"
     value: |
       1.
       2.
@@ -49,53 +34,46 @@ body:
     render: bash
   validations:
     required: true
-- type: input
+- type: textarea
   id: motivation
   attributes:
-    label: Motivation
-    description: "動機"
+    label: "動機"
   validations:
     required: true
-- type: input
+- type: textarea
   id: method
   attributes:
-    label: Method
-    description: "手法"
+    label: "手法"
   validations:
     required: true
-- type: input
+- type: textarea
   id: background
   attributes:
-    label: Background
-    description: "背景"
+    label: "背景"
   validations:
     required: true
-- type: input
+- type: textarea
   id: result
   attributes:
-    label: Result
-    description: "結果"
+    label: "結果"
   validations:
     required: true
-- type: input
+- type: textarea
   id: discussion
   attributes:
-    label: Discussion
-    description: "考察"
+    label: "考察"
   validations:
     required: true
-- type: input
+- type: textarea
   id: future_work
   attributes:
-    label: Future Work
-    description: "課題"
+    label: "課題"
   validations:
     required: true
 - type: dropdown
   id: read_level
   attributes:
-    label: How much did you read the paper?
-    description: "読んだ範囲"
+    label: "読んだ範囲"
     options:
       - "アブストだけ"
       - "ななめ読み程度"
