@@ -1,0 +1,104 @@
+name: "form_test"
+title: "surveyed paper registration form"
+description: "test form"
+body:
+- type: textarea
+  id: repro
+  attributes:
+    label: Reproduction steps
+    description: "How do you trigger this bug? Please walk us through it step by step."
+    value: |
+      1.
+      2.
+      3.
+      ...
+    render: bash
+  validations:
+    required: true
+- type: input
+  id: hitokoto
+  attributes:
+    label: One line description
+    description: "論文内容を一言で要約"
+  validations:
+    required: true
+- type: input
+  id: author
+  attributes:
+    label: One line description
+    description: "著者名"
+  validations:
+    required: true
+- type: input
+  id: conference
+  attributes:
+    label: Title of the conference or the journal
+    description: "会議名/ジャーナル名"
+  validations:
+    required: true
+- type: textarea
+  id: affiliation
+  attributes:
+    label: Affiliation
+    description: "所属機関を箇条書きで"
+    value: |
+      1.
+      2.
+      3.
+      ...
+    render: bash
+  validations:
+    required: true
+- type: input
+  id: motivation
+  attributes:
+    label: Motivation
+    description: "動機"
+  validations:
+    required: true
+- type: input
+  id: method
+  attributes:
+    label: Method
+    description: "手法"
+  validations:
+    required: true
+- type: input
+  id: background
+  attributes:
+    label: Background
+    description: "背景"
+  validations:
+    required: true
+- type: input
+  id: result
+  attributes:
+    label: Result
+    description: "結果"
+  validations:
+    required: true
+- type: input
+  id: discussion
+  attributes:
+    label: Discussion
+    description: "考察"
+  validations:
+    required: true
+- type: input
+  id: future_work
+  attributes:
+    label: Future Work
+    description: "課題"
+  validations:
+    required: true
+- type: dropdown
+  id: read_level
+  attributes:
+    label: How much did you read the paper?
+    description: "読んだ範囲"
+    options:
+      - "アブストだけ"
+      - "ななめ読み程度"
+      - "一通り精読"
+  validations:
+    required: true
