@@ -1,0 +1,95 @@
+name: "Industry Track"
+title: "論文タイトル"
+description: "Industry Track用テンプレート"
+body:
+- type: input
+  id: hitokoto
+  attributes:
+    label: "論文内容を一言で要約"
+  validations:
+    required: true
+- type: input
+  id: author
+  attributes:
+    label: "著者名"
+    description: "氏名（所属機関番号）の形式でカンマで区切って記入してください"
+  validations:
+    required: true
+- type: input
+  id: DOI
+  attributes:
+    label: "DOI"
+    description: "DOIがない場合は論文URL"
+  validations:
+    required: true
+- type: input
+  id: conference
+  attributes:
+    label: "会議名/ジャーナル名"
+  validations:
+    required: true
+- type: textarea
+  id: affiliation
+  attributes:
+    label: "著者の所属機関"
+    description: "箇条書きで"
+    value: |
+      1.
+      2.
+      3.
+      ...
+    render: bash
+  validations:
+    required: true
+- type: textarea
+  id: motivation
+  attributes:
+    label: "動機"
+    description: "産業・ビジネス上の問題（困っていること）"
+  validations:
+    required: true
+- type: textarea
+  id: issue
+  attributes:
+    label: "課題"
+    description: "産業・ビジネス上の問題（困っていること）"
+  validations:
+    required: true
+- type: textarea
+  id: method
+  attributes:
+    label: "手法"
+    description: "課題解決に利用した技術・手段"
+  validations:
+    required: true
+- type: textarea
+  id: evaluation
+  attributes:
+    label: "背景"
+    description: "手法が課題解決に有効であったことの確認や，ビジネス現場への適用・運用の実績"
+  validations:
+    required: true
+- type: textarea
+  id: discussion
+  attributes:
+    label: "考察"
+    description: "手法の汎用性や可用性に対する議論"
+  validations:
+    required: true
+- type: textarea
+  id: knowledge
+  attributes:
+    label: "知見"
+    description: "得られた教訓・知見，および今後の課題"
+  validations:
+    required: true
+- type: dropdown
+  id: read_level
+  attributes:
+    label: "読んだ範囲"
+    options:
+      - "アブストだけ"
+      - "ななめ読み程度"
+      - "一通り精読"
+  validations:
+    required: true

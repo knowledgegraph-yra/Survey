@@ -1,0 +1,95 @@
+name: "Research Track"
+title: "論文タイトル"
+description: "Research Track用テンプレート"
+body:
+- type: input
+  id: hitokoto
+  attributes:
+    label: "論文内容を一言で要約"
+  validations:
+    required: true
+- type: input
+  id: author
+  attributes:
+    label: "著者名"
+    description: "氏名（所属機関番号）の形式でカンマで区切って記入してください"
+  validations:
+    required: true
+- type: input
+  id: DOI
+  attributes:
+    label: "DOI"
+    description: "DOIがない場合は論文URL"
+  validations:
+    required: true
+- type: input
+  id: conference
+  attributes:
+    label: "会議名/ジャーナル名"
+  validations:
+    required: true
+- type: textarea
+  id: affiliation
+  attributes:
+    label: "著者の所属機関"
+    description: "箇条書きで"
+    value: |
+      1.
+      2.
+      3.
+      ...
+    render: bash
+  validations:
+    required: true
+- type: textarea
+  id: motivation
+  attributes:
+    label: "動機"
+    description: "What do the author(s) want to know (motivation)?"
+  validations:
+    required: true
+- type: textarea
+  id: method
+  attributes:
+    label: "手法"
+    description: "What did they do (approach/methods)?"
+  validations:
+    required: true
+- type: textarea
+  id: background
+  attributes:
+    label: "背景"
+    description: "Why was it done that way (context within the field)?関連研究や新規性など。"
+  validations:
+    required: true
+- type: textarea
+  id: result
+  attributes:
+    label: "結果"
+    description: "What do the results show (figures and data tables)?"
+  validations:
+    required: true
+- type: textarea
+  id: discussion
+  attributes:
+    label: "考察"
+    description: "How did the author(s) interpret the results (interpretation/discussion)?"
+  validations:
+    required: true
+- type: textarea
+  id: issue
+  attributes:
+    label: "課題"
+    description: "What should be done next?"
+  validations:
+    required: true
+- type: dropdown
+  id: read_level
+  attributes:
+    label: "読んだ範囲"
+    options:
+      - "アブストだけ"
+      - "ななめ読み程度"
+      - "一通り精読"
+  validations:
+    required: true

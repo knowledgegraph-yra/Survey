@@ -1,0 +1,108 @@
+name: "Resources Track"
+title: "論文タイトル"
+description: "Resources Track用テンプレート"
+body:
+- type: input
+  id: hitokoto
+  attributes:
+    label: "論文内容を一言で要約"
+  validations:
+    required: true
+- type: input
+  id: author
+  attributes:
+    label: "著者名"
+    description: "氏名（所属機関番号）の形式でカンマで区切って記入してください"
+  validations:
+    required: true
+- type: input
+  id: DOI
+  attributes:
+    label: "DOI"
+    description: "DOIがない場合は論文URL"
+  validations:
+    required: true
+- type: input
+  id: resource_type
+  attributes:
+    label: "Resource Type"
+    description: "原稿に書かれていればそれを記載。書かれていなければ空欄。"
+  validations:
+    required: false
+- type: input
+  id: conference
+  attributes:
+    label: "会議名/ジャーナル名"
+  validations:
+    required: true
+- type: textarea
+  id: affiliation
+  attributes:
+    label: "著者の所属機関"
+    description: "箇条書きで"
+    value: |
+      1.
+      2.
+      3.
+      ...
+    render: bash
+  validations:
+    required: true
+- type: textarea
+  id: motivation
+  attributes:
+    label: "動機"
+  validations:
+    required: true
+- type: textarea
+  id: design
+  attributes:
+    label: "リソースの設計方針"
+    description: "作成したリソースと、リソースの設計方針の説明"
+  validations:
+    required: true
+- type: textarea
+  id: original
+  attributes:
+    label: "新規性"
+    description: "※[Resources TrackのCFP](https://iswc2021.semanticweb.org/resources-track)のImpactに該当する項目"
+  validations:
+    required: true
+- type: textarea
+  id: reusability
+  attributes:
+    label: "リソースの再利用性/活用実績"
+    description: "※[Resources TrackのCFP](https://iswc2021.semanticweb.org/resources-track)のReusabilityに該当する項目"
+  validations:
+    required: true
+- type: textarea
+  id: quality
+  attributes:
+    label: "品質"
+    description: "※[Resources TrackのCFP](https://iswc2021.semanticweb.org/resources-track)のDesign & Technical qualityに該当する項目"
+  validations:
+    required: true
+- type: textarea
+  id: usability
+  attributes:
+    label: "リソースの可用性"
+    description: "※[Resources TrackのCFP](https://iswc2021.semanticweb.org/resources-track)のAvailabilityに該当する項目"
+  validations:
+    required: true
+- type: textarea
+  id: future_work
+  attributes:
+    label: "次にすべきこと"
+    description: "記載されているリソース作成計画、次にすべきこととして(読者が)考える点"
+  validations:
+    required: true
+- type: dropdown
+  id: read_level
+  attributes:
+    label: "読んだ範囲"
+    options:
+      - "アブストだけ"
+      - "ななめ読み程度"
+      - "一通り精読"
+  validations:
+    required: true

@@ -1,6 +1,6 @@
-name: "form_test"
+name: "Industry Track"
 title: "論文タイトル"
-description: "test form"
+description: "Industry Track用テンプレート"
 body:
 - type: input
   id: hitokoto
@@ -13,6 +13,13 @@ body:
   attributes:
     label: "著者名"
     description: "氏名（所属機関番号）の形式でカンマで区切って記入してください"
+  validations:
+    required: true
+- type: input
+  id: DOI
+  attributes:
+    label: "DOI"
+    description: "DOIがない場合は論文URL"
   validations:
     required: true
 - type: input
@@ -38,36 +45,42 @@ body:
   id: motivation
   attributes:
     label: "動機"
+    description: "研究の動機、社会的インパクトなど"
   validations:
     required: true
 - type: textarea
   id: method
   attributes:
     label: "手法"
+    description: "提案手法、技術を応用する際に対象された課題の新規性や重要性など"
   validations:
     required: true
 - type: textarea
   id: background
   attributes:
     label: "背景"
+    description: "背景、関連研究、ユースケースの新規性や重要性など"
   validations:
     required: true
 - type: textarea
   id: result
   attributes:
     label: "結果"
+    description: "結果（図表も含まれる）"
   validations:
     required: true
 - type: textarea
-  id: discussion
+  id: usage_performance
   attributes:
-    label: "考察"
+    label: "利用実績"
+    description: "（対象ドメインでの）利用実績"
   validations:
     required: true
 - type: textarea
-  id: future_work
+  id: best_practice
   attributes:
-    label: "課題"
+    label: "学んだ教訓やベストプラクティス"
+    description: "学んだ教訓やベストプラクティス、適応性など"
   validations:
     required: true
 - type: dropdown
