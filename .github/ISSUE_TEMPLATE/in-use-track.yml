@@ -1,6 +1,6 @@
-name: "Industry Track"
+name: "In-use Track"
 title: "論文タイトル"
-description: "Industry Track用テンプレート"
+description: "In-use Track用テンプレート"
 body:
 - type: input
   id: hitokoto
